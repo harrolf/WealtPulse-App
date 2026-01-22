@@ -1,0 +1,139 @@
+# ============================================================================
+# WealthPulse Backend Dependencies
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# Core Web Framework
+# ----------------------------------------------------------------------------
+fastapi==0.115.0              # Modern async web framework
+uvicorn==0.30.0               # ASGI server for FastAPI
+starlette==0.38.6             # ASGI framework (FastAPI dependency)
+python-multipart==0.0.9       # Form data parsing for file uploads
+
+# ----------------------------------------------------------------------------
+# Database & ORM
+# ----------------------------------------------------------------------------
+SQLAlchemy==2.0.45            # SQL toolkit and ORM
+alembic==1.18.0               # Database migration tool for SQLAlchemy
+asyncpg==0.30.0               # PostgreSQL async driver (production)
+aiosqlite==0.20.0             # SQLite async driver (development/testing)
+peewee==3.19.0                # Lightweight ORM (optional, legacy)
+greenlet==3.3.0               # Coroutine support for SQLAlchemy
+
+# ----------------------------------------------------------------------------
+# Authentication & Security
+# ----------------------------------------------------------------------------
+python-jose[cryptography]==3.3.0  # JWT token encoding/decoding
+passlib[bcrypt]==1.7.4            # Password hashing library
+bcrypt==4.1.2                     # Bcrypt algorithm for passlib
+webauthn==2.3.0                   # WebAuthn/Passkey authentication (py_webauthn)
+
+# ----------------------------------------------------------------------------
+# Configuration & Settings
+# ----------------------------------------------------------------------------
+pydantic==2.12.5              # Data validation using type hints
+pydantic-settings==2.2.0      # Settings management for Pydantic
+pydantic_core==2.41.5         # Core validation logic for Pydantic
+python-dotenv==1.2.1          # Load environment variables from .env files
+
+# ----------------------------------------------------------------------------
+# Task Scheduling & Background Jobs
+# ----------------------------------------------------------------------------
+APScheduler==3.10.4           # Advanced Python scheduler for background tasks
+
+# ----------------------------------------------------------------------------
+# HTTP Client & Web Scraping
+# ----------------------------------------------------------------------------
+httpx==0.27.0                 # Async HTTP client
+httpcore==1.0.9               # Low-level HTTP transport (httpx dependency)
+requests==2.32.5              # Synchronous HTTP library
+curl_cffi==0.13.0             # Python binding for curl with HTTP/2 support
+beautifulsoup4==4.14.3        # HTML/XML parsing library
+html5lib==1.1                 # HTML5 parser for BeautifulSoup
+lxml==6.0.2                   # Fast XML/HTML processing library
+soupsieve==2.8.1              # CSS selector library for BeautifulSoup
+
+# ----------------------------------------------------------------------------
+# Financial Data & Market Analysis
+# ----------------------------------------------------------------------------
+yfinance==1.0                 # Yahoo Finance data downloader
+pandas==2.3.3                 # Data manipulation and analysis
+openpyxl==3.1.5               # Excel file reader/writer for pandas
+pdfplumber==0.11.4            # PDF tabular data extraction
+numpy==2.4.1                  # Numerical computing library
+python-dateutil==2.9.0.post0  # Extensions to standard datetime module
+multitasking==0.0.12          # Parallel processing (yfinance dependency)
+
+# ----------------------------------------------------------------------------
+# Rate Limiting & API Protection
+# ----------------------------------------------------------------------------
+slowapi==0.1.9                # Rate limiting for FastAPI
+
+# ----------------------------------------------------------------------------
+# Validation & Type Checking
+# ----------------------------------------------------------------------------
+email-validator==2.3.0        # Email validation
+typing_extensions==4.15.0     # Backported typing features
+typing-inspection==0.4.2      # Runtime inspection of typing module
+annotated-types==0.7.0        # Reusable type annotations
+
+# ----------------------------------------------------------------------------
+# Timezone & Date Handling
+# ----------------------------------------------------------------------------
+pytz==2025.2                  # World timezone definitions
+tzdata==2025.3                # IANA timezone database
+tzlocal==5.3.1                # Local timezone detection
+
+# ----------------------------------------------------------------------------
+# System & Process Monitoring
+# ----------------------------------------------------------------------------
+psutil==5.9.8                 # Cross-platform system and process utilities
+
+# ----------------------------------------------------------------------------
+# Networking & DNS
+# ----------------------------------------------------------------------------
+dnspython==2.8.0              # DNS toolkit for Python
+idna==3.11                    # Internationalized domain names
+certifi==2026.1.4             # Root certificates for SSL verification
+urllib3==2.6.3                # HTTP client library
+
+# ----------------------------------------------------------------------------
+# Protocol & Serialization
+# ----------------------------------------------------------------------------
+protobuf==6.33.4              # Protocol Buffers serialization
+frozendict==2.4.7             # Immutable dictionary implementation
+websockets==16.0              # WebSocket client and server library
+h11==0.16.0                   # Pure-Python HTTP/1.1 protocol implementation
+
+# ----------------------------------------------------------------------------
+# Async & Concurrency
+# ----------------------------------------------------------------------------
+anyio==4.12.1                 # Async compatibility layer
+sniffio==1.3.1                # Detect async library in use
+
+# ----------------------------------------------------------------------------
+# Template & Markup
+# ----------------------------------------------------------------------------
+Mako==1.3.10                  # Template library (Alembic dependency)
+MarkupSafe==3.0.3             # Safe string handling for templates
+webencodings==0.5.1           # Character encoding aliases
+
+# ----------------------------------------------------------------------------
+# Utilities
+# ----------------------------------------------------------------------------
+click==8.3.1                  # Command-line interface creation kit
+six==1.17.0                   # Python 2/3 compatibility utilities
+platformdirs==4.5.1           # Platform-specific directory paths
+pycparser==2.23               # C parser (cffi dependency)
+cffi==2.0.0                   # C Foreign Function Interface
+charset-normalizer==3.4.4     # Character encoding detection
+prometheus-fastapi-instrumentator==7.1.0
+starlette-csrf==3.0.0
+
+# ----------------------------------------------------------------------------
+# Development & Linting
+# ----------------------------------------------------------------------------
+ruff==0.1.11                  # Fast Python linter and formatter
+mypy==1.8.0                   # Static type checker
+types-requests==2.31.0.2      # Type stubs for requests
+types-python-dateutil==2.8.19.20240106 # Type stubs for dateutil

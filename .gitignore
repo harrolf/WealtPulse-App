@@ -1,0 +1,93 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+# lib/
+# lib64/
+
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Database & Data
+*.db
+*.sqlite3
+/backend/data/*
+!/backend/data/.gitkeep
+/data/*
+!/data/.gitkeep
+
+# Logs & Debug
+logs/
+*.log
+backend.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Unit test / Coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Frontend
+node_modules/
+.DS_Store
+dist/
+dist-ssr/
+*.local
+.npm
+.cache
+.vite
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.secret
+token.json
+credentials.json
+.credentials/
+
+# Project Specific
+# We track these in the Private repo, but the publish script 
+# will strip them before pushing to the Public repo.
+!.agent/
+internal/
+
+.agent/brain/
+.agent/tmp/
